@@ -21,7 +21,9 @@
     "prettier": "prettier --write \"**/*.{ts,tsx,md,json,html}\"",
     "format": "npm run lint:fix && npm run prettier",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "vite"
+        
   },
   "dependencies": {
     "@emotion/css": "^11.13.0",
