@@ -22,7 +22,7 @@
     "format": "npm run lint:fix && npm run prettier",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "start": "vite"
+    "start": "vite --host"
         
   },
   "dependencies": {
