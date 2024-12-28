@@ -108,12 +108,6 @@ pipeline {
         }
     }
     
-<<<<<<< HEAD
  
     
 }
-=======
-     
-}
-//end of pipeline here
->>>>>>> 67e23defb385f2332ab4ce20697f55534edc1a3c
