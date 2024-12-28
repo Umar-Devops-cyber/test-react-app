@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   react-app:
-    image: react-app:latest  
+    image: umerbloch/react-app:latest  
     container_name: react-app-container
     ports:
       - "90:80"  # Expose port 80 of the container to port 80 of the host
