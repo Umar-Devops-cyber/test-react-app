@@ -2,11 +2,12 @@ version: '3.8'
 
 services:
   react-app:
-    image: your_image_name:your_tag  # Replace with your actual image name and tag
+    image: react-app:latest  # Replace with your actual image name and tag
     ports:
-      - "80:80"
+      - "90:80"
     networks:
       - react-network
+    restart: always
 
 networks:
   react-network:
