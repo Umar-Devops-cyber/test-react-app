@@ -60,7 +60,8 @@ pipeline {
                     docker login -u \$DOCKER_USERNAME -p \$DOCKER_PASSWORD
                     docker tag react-app:latest \$DOCKER_USERNAME/react-app:latest
                     docker push \$DOCKER_USERNAME/react-app:latest
-                    docker rmi $(docker images)
+                    sleep 50
+                    docker rmi -f \$(docker images -q)
                     """
     
             
@@ -69,7 +70,8 @@ pipeline {
             }
         }
 
-          
+    
+        
         stage ("deploy"){
             
             steps{
@@ -82,7 +84,8 @@ pipeline {
             
         }
         
-             
+     
+        
     }
     
     post {
@@ -105,6 +108,6 @@ pipeline {
         }
     }
     
-     
+ 
+    
 }
-//end of pipeline
