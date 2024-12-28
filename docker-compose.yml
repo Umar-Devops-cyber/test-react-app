@@ -2,14 +2,12 @@ version: '3.8'
 
 services:
   react-app:
-    image: umerbloch/react-app:latest  
-    container_name: react-app-container
+    image: your_image_name:your_tag  # Replace with your actual image name and tag
     ports:
-      - "90:80"  # Expose port 80 of the container to port 80 of the host
+      - "80:80"
     networks:
-      - app-network
-    restart: unless-stopped  # Automatically restart the container unless stopped manually
+      - react-network
 
 networks:
-  app-network:
+  react-network:
     driver: bridge
