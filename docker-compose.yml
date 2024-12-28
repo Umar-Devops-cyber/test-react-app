@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   react-app:
-    image: react-app:latest  # Replace with your actual image name and tag
+    image: umerbloch/react-app:latest  # Replace with your actual image name and tag
     ports:
       - "90:80"
     networks:
